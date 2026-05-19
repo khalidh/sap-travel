@@ -1,0 +1,25 @@
+{
+  "travels": [
+    {
+      "country": "Autriche",
+      "city": "Vienne",
+      "description": "Découverte de la culture autrichienne",
+      "date": "14/08/2025",
+      "price": "1 250 €"
+    },
+    {
+      "country": "Espagne",
+      "city": "Barcelone",
+      "description": "Plages, gastronomie et architecture",
+      "date": "10/09/2025",
+      "price": "980 €"
+    },
+    {
+      "country": "Portugal",
+      "city": "Lisbonne",
+      "description": "Fado, tramways et belvédères",
+      "date": "05/10/2025",
+      "price": "1 150 €"
+    }
+  ]
+}
