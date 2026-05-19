@@ -1,0 +1,25 @@
+<mvc:View controllerName="travel.controller.App" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+    <App id="app">
+        <pages>
+            <Page id="travelPage" title="{i18n>/appTitle}">
+                <headerContent>
+                    <SearchField width="100%" placeholder="{i18n>/searchPlaceholder}" search="onSearch" liveChange="onSearch" />
+                </headerContent>
+                <content>
+                    <List
+                        id="travelList"
+                        mode="SingleSelectMaster"
+                        items="{path: '/travels'}"
+                        growing="true"
+                        itemPress="onItemPress">
+                        <StandardListItem
+                            title="{city}, {country}"
+                            description="{description}"
+                            info="{price}"
+                            type="Active" />
+                    </List>
+                </content>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>
