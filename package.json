@@ -1,0 +1,10 @@
+{
+  "name": "sap-travel",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "check": "npm run check:harness",
+    "check:harness": "node tools/validate-repo.mjs"
+  }
+}
