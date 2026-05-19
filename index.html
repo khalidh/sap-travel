@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>SAP Travel App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <script id="sap-ui-bootstrap" src="https://ui5.sap.com/resources/sap-ui-core.js"
+            data-sap-ui-theme="sap_fiori_3"
+            data-sap-ui-libs="sap.m"
+            data-sap-ui-compatVersion="edge"
+            data-sap-ui-async="true"
+            data-sap-ui-preload="none"
+            data-sap-ui-resourceroots='{"travel":"./webapp"}'>
+    </script>
+</head>
+<body class="sapUiBody" role="application">
+    <div id="content"></div>
+    <script>
+        sap.ui.require(["sap/ui/core/ComponentContainer"], function(ComponentContainer) {
+            new ComponentContainer({
+                name: "travel",
+                async: true,
+                height: "100%"
+            }).placeAt("content");
+        });
+    </script>
+</body>
+</html>
