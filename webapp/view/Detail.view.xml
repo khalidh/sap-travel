@@ -1,0 +1,14 @@
+<mvc:View controllerName="travel.controller.Detail" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+    <Page title="{i18n>/detailTitle}" showNavButton="true" navButtonPress="onNavBack">
+        <content>
+            <VBox class="sapUiSmallMargin">
+                <Text text="{i18n>/cityLabel}: {city}" />
+                <Text text="{i18n>/countryLabel}: {country}" />
+                <Text text="{i18n>/dateLabel}: {date}" />
+                <Text text="{i18n>/priceLabel}: {price}" />
+                <Text text="{description}" wrapping="true" class="sapUiSmallMarginTop" />
+                <Button text="{i18n>/backButton}" press="onNavBack" class="sapUiSmallMarginTop" />
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
